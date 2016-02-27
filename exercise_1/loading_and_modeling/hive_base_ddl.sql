@@ -136,9 +136,3 @@ WITH SERDEPROPERTIES (
 )
 STORED AS TEXTFILE
 LOCATION '/user/w205/hospital_compare/surveys_response';
-
---LOAD DATA inpath '/user/w205/hospital_compare/hospital.csv' overwrite INTO TABLE hospital;
---LOAD DATA inpath '/user/w205/hospital_compare/hospital.csv' overwrite INTO TABLE effective_care;
---LOAD DATA inpath '/user/w205/hospital_compare/hospital.csv' overwrite INTO TABLE readmission;
---LOAD DATA inpath '/user/w205/hospital_compare/hospital.csv' overwrite INTO TABLE measures;
---LOAD DATA inpath '/user/w205/hospital_compare/hospital.csv' overwrite INTO TABLE surveys_response;

@@ -16,20 +16,6 @@ wget -O "Hospital_Revised_Flatfiles.zip" https://data.medicare.gov/views/bg9k-em
 
 unzip Hospital_Revised_Flatfiles.zip -d data_file
 
-		mv "Hospital General Information.csv" "hospital.csv"
-		mv "Timely and Effective Care - Hospital.csv" "effective_care.csv"
-		mv "Readmissions and Deaths - Hospital.csv" "readmissions.csv"
-		mv "Measure Dates.csv" "measures.csv"
-		mv "hvbp_hcahps_05_28_2015.csv" "surveys_response.csv"
-
-		tail -n+2 "hospital.csv" >"hospital.csv"
-		tail -n+2 "effective_care.csv">"effective_care.csv"
-		tail -n+2 "readmissions.csv">"readmissions.csv"
-		tail -n+2 "measures.csv" >"measures.csv"
-		tail -n+2 "surveys_response.csv" >"surveys_response.csv"
-
-
-
 tail -n+2 data_file/"Hospital General Information.csv" > data_file/"hospital.csv"
 tail -n+2 data_file/"Timely and Effective Care - Hospital.csv" > data_file/"effective_care.csv"
 tail -n+2 data_file/"Readmissions and Deaths - Hospital.csv" > data_file/"readmissions.csv"
