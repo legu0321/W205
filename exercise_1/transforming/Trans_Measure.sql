@@ -1,6 +1,6 @@
 
-DROP TABLE measures_parquet;
-CREATE TABLE measures_parquet AS 
+DROP TABLE etl_measures;
+CREATE TABLE etl_measures AS 
 SELECT MeasureName ,
 MeasureID ,
 Measure_Start_Quarter ,

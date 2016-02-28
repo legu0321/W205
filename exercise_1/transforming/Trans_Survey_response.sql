@@ -23,9 +23,10 @@ Cleanliness_and_Quietness_of_Hospital_Environment_Dimension_Score ,
 Discharge_Information_Achievement_Points ,
 Discharge_Information_Improvement_Points ,
 Discharge_Information_Dimension_Score ,
-Overall_Rating_of_Hospital_Achievement_Points ,
-Overall_Rating_of_Hospital_Improvement_Points ,
-Overall_Rating_of_Hospital_Dimension_Score ,
-HCAHPS_Base_Score ,
-HCAHPS_Consistency_Score 
-FROM surveys_response;
+cast(substring(Overall_Rating_of_Hospital_Achievement_Points,1,2) as float) Overall_Rating_of_Hospital_Achievement_Points,
+cast(substring(Overall_Rating_of_Hospital_Improvement_Points ,1,2) as float) Overall_Rating_of_Hospital_Improvement_Points,
+cast(substring(Overall_Rating_of_Hospital_Dimension_Score,1,2) as float) Overall_Rating_of_Hospital_Dimension_Score,
+cast(HCAHPS_Base_Score  as int) as HCAHPS_Base_Score,
+cast(HCAHPS_Consistency_Score as int) as  HCAHPS_Consistency_Score
+FROM surveys_response
+where HCAHPS_Base_Score<>'Not Available';
