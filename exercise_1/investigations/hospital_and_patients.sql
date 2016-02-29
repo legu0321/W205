@@ -1,6 +1,4 @@
 
-
-/**Q4**/
 create  table  hospital_procedure_variability as
 select providerid,stddev(score_regularized)  as std_score,count(*)
 from temp_measures_scores_regularized 
