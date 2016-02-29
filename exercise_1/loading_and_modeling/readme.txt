@@ -1,0 +1,2 @@
+When designing the ER diagram, I did not combine the two tables: timely and effective care and readmission into one, given I believe these two evaluation items should have the equal weight and importance when determine the hospital quality. Also, these two fields of evaluations have very different number of measurements, if I combined them together, the overall result can be skewed or led by the one with more measurements, which is timely and effective care for this case.
+   
