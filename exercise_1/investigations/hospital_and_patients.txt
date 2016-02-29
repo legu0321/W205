@@ -1,0 +1,6 @@
+Methodology:
+In this analysis, I picked the overall ratings as well as HCAHPS_Base_Score to present the hospital surveys response results. I tested the hospital level correlations between 1)hospital procedure variability and survey response 2)hospital quality score and survey response.  
+
+Results:
+Based on the correlation results, the variability of the readmission and death rate is more correlated with both “overall hospital achievement ratings” and “overall hospital dimension ratings” than timely and effective care. The effective size is medium. 
+Also, the hospital quality score seems to be correlated with “overall hospital achievement ratings” and “overall hospital dimension ratings” as well, and the effect size is also medium.

@@ -1,0 +1,9 @@
+Most varied procedure:
+OP_2    Fibrinolytic Therapy Received Within 30 Minutes of ED Arrival
+
+Methodology:
+In order to figure out the procedure with the most variability, I used the standard deviation as the measurement. The calculation of the standard deviation is based on the procedure scores after scaling and I filtered out some procedures based on the low number of scores reported. 
+
+Results:
+Based on the rakings from the two lists of procedures, I took out the AMI_7a, which ranks top 1, given it only reports three scores. I also took out EDV, which is originally stored as categorical measurement, and my manual step of converting them into numeric would potentially exaggerate the variance. Therefore, I believe the most varied procedure is OP_2 (Fibrinolytic Therapy Received Within 30 Minutes of ED Arrival), which ranks third in the standard deviation, and reports 68 hospitals results.
+

@@ -1,0 +1,17 @@
+Top States:
+State	Avg Score		Standard Deviation
+DE      0.7200945437266215      0.21190572766951907     
+NH      0.7073278804737004      0.22528860963215142    
+VT      0.7027518399499247      0.21823679820346203     
+MT      0.6974946272499708      0.2267828416463149      
+CO      0.6974279162148407      0.23479847321457079     
+
+
+Methodology:
+Hospital Quality in this analysis is evaluated based on the performance of two big types of measurements: Timely and effective care and readmission rate. The top quality hospitals should perform well in both of these two fields. Given different states would have a lot more or less hospitals, I believe taking the average among states based on hospital scores would be the best approach to measure the by state hospital quality. Therefore, I calculated such averaged quality score for each individual bucket same as questions 1 and take the top states that have the higher combined scores.
+
+Data Cleaning and Preprocessing:
+1.	Given that different measures have inconsistent scales of score, in order to prevent skewing the result by measures with large scale, I have applied Scaling to the measure scores, and converted the scores to a value always between 0 and 1.
+
+Results:
+Based on the combined average score from both of the two fields, DE is the top ranked state. However, it only reports/has a really small number of hospitals which may not be very representative as an entire state. Therefore, I believe CO which ranks #5 and at the same time reported a great number of hospitals performance to be a good model for hospital quality.  

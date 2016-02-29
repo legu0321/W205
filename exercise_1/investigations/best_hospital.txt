@@ -1,0 +1,26 @@
+Top 10 Best Hospitals:
+
+ID	Avg Score		Avg Standard Deviation
+050424  0.8402883633848717      0.1418208867746482      
+050625  0.7956879708660831      0.22709278244011488     
+220077  0.7923222449426335      0.20313395769228984     
+330182  0.7849651852232395      0.2093323998579229      
+130006  0.7814973719237736      0.24034823152881696     
+330214  0.777074145998476       0.2456619049886914     
+030103  0.77524406853137        0.22870572496501723     
+160029  0.7746045781798905      0.20838292493415414     
+340002  0.7733855058366613      0.23671862721804954     
+670025  0.7725360407642727      0.2564495023718553    
+
+
+Methodology:
+Hospital Quality in this analysis is evaluated based on the performance of two types of measurements: Timely and effective care and readmission rate. The top quality hospitals should perform well in both of these two fields. Therefore, I calculated the average hospital quality score for each individual bucket and take the top ones that have the higher combined scores.
+
+Data Cleaning and Preprocessing:
+1.	Given that different measures have inconsistent scales of score, in order to prevent skewing the result by measures with large scale, I have applied Scaling to the measure scores, and converted the scores to a value always between 0 and 1.
+2.	Given hospitals are not reporting scores for every measure, the results for hospitals that reported very few measures are not reliable and can be biased. Therefore, I have filtered out a bunch of hospitals that reported fewer measures in each buckets. 
+
+Results:
+After score scaling and filtering out unreliable hospital results, I calculated an overall quality score that is averaged across different measure scores of each hospital in the two buckets. Then I combined the two results and rank the hospital qualities by the sum of two scores. Looking through the results, I could see these hospitals performed better in both of the fields, and the standard deviations are also very low which indicates they have a really consistent performance.
+
+
