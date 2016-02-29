@@ -8,4 +8,9 @@ Readmission shows the percentage of patients that are readmissioned or died, the
 
 For survey response data, I transformed 3 measures (Overall_Rating_of_Hospital_Achievement_Points, Overall_Rating_of_Hospital_Achievement_Points, Overall_Rating_of_Hospital_Improvement_Points) by taking out the number part before "out of 10" to make them numeric vaues.
 
+
+I have also kept some columns in my tables after transformationm that are not used in my analysis. I find it useful to include them in the raw table, since it would potentially be leveraged by other type of analysis or other directions on the same analysis.
+
+
+
   
